@@ -418,7 +418,7 @@ textarea {
 	float: left;
 }
 
-[class*="col-"] + [class*="col-"].end {
+[class*="col-"]+[class*="col-"].end {
 	float: right;
 }
 
@@ -452,6 +452,20 @@ textarea {
 .col-six,
 .col-1-2 {
 	width: 50%;
+}
+
+.col-six2 {
+	width: 40%;
+}
+
+.col-six3 {
+	width: 60%;
+}
+
+.col-six3,
+iframe {
+	max-width: 100%;
+	invert: 50%;
 }
 
 .col-seven {
@@ -604,7 +618,7 @@ textarea {
 		padding: 0;
 	}
 
-	[class*="col-"] + [class*="col-"].end {
+	[class*="col-"]+[class*="col-"].end {
 		float: none;
 	}
 
